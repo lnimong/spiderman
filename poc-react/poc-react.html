@@ -1,0 +1,97 @@
+<html>
+
+<head>
+
+<style type="text/css">
+
+body {
+	font-family: Roboto, arial, sans-serif;
+}
+
+#apphost {
+	height: 100%;
+	vertical-align: top;
+}
+
+body, html, div {
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.root {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.conversation, .panel {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	vertical-align: top;
+}
+
+.panel .media-container {
+	display: inline-block;
+}
+
+.messages  {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.tab-content {
+	overflow-y : auto;
+	bottom: 20px;
+	top: 40px;
+	position: absolute;
+}
+
+.messages-history {
+    overflow-y: auto;
+    top: 0;
+    bottom: 40px;
+    position: absolute;
+    width: 100%;
+}
+
+.message-writer {
+    bottom: 0;
+    height: 40px;
+    position: absolute;
+}
+
+
+.panel .headers span {
+	padding: 10px;
+`	display: inline-block;
+	cursor: pointer;
+	transition : color .5s;
+}
+
+.panel .headers .selected {
+	color: blue
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div id="apphost"></div>
+
+<script type="text/javascript" src="react/react.js"></script>
+<script type="text/javascript" src="reflux/dist/reflux.js"></script>
+<script type="text/javascript" src="react/JSXTransformer.js"></script>
+
+<script type="text/jsx" src="poc-react.jsx"></script>
+
+</body>
+
+</html>
